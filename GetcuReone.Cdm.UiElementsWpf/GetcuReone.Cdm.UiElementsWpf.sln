@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetcuReone.Cdm.UiElementsWpf", "GetcuReone.Cdm.UiElementsWpf\GetcuReone.Cdm.UiElementsWpf.csproj", "{F2D83C81-BC7F-4C84-8CA1-FC1E82D03FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4B092331-5230-4DEB-BD99-C061CB3DC476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureTests", "Infrastructure\InfrastructureTests\InfrastructureTests.csproj", "{40DBF490-ED9B-4F1F-B4E0-76557544953A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2D83C81-BC7F-4C84-8CA1-FC1E82D03FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D83C81-BC7F-4C84-8CA1-FC1E82D03FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D83C81-BC7F-4C84-8CA1-FC1E82D03FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D83C81-BC7F-4C84-8CA1-FC1E82D03FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DBF490-ED9B-4F1F-B4E0-76557544953A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DBF490-ED9B-4F1F-B4E0-76557544953A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DBF490-ED9B-4F1F-B4E0-76557544953A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DBF490-ED9B-4F1F-B4E0-76557544953A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40DBF490-ED9B-4F1F-B4E0-76557544953A} = {4B092331-5230-4DEB-BD99-C061CB3DC476}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDA7099E-DE9D-4F8D-B1D9-917E4C0FCB9F}
+	EndGlobalSection
+EndGlobal
