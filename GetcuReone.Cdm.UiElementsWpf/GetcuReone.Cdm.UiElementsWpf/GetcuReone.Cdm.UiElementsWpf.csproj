@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <RootNamespace>GetcuReone.Cdm.UiElementsWpf</RootNamespace>
+        <DocumentationFile>GetcuReone.Cdm.UiElementsWpf.xml</DocumentationFile>
+
+        <Authors>Itua Juel-Gaben</Authors>
+        <PackageId>GetcuReone.Cdm.UiElementsWpf</PackageId>
+        <Product>GetcuReone.Cdm.UiElementsWpf</Product>
+        <Description>Commont Wpf Ui elements.</Description>
+        <RepositoryUrl>https://github.com/GetcuReone/GetcuReone.Cdm.UiElementsWpf</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>getcureone mvvm wpf mvvmwpf uielements elements</PackageTags>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/GetcuReone/GetcuReone.Cdm.UiElementsWpf</PackageProjectUrl>
+        <Copyright>Copyright © 2020 $(Authors)</Copyright>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
+        <DelaySign>false</DelaySign>
+        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="ui_elements\styles\Button\RoundButtonStyle.xaml" />
+        <None Remove="ui_elements\styles\ListBoxItem\EmptyListBoxItemStyle.xaml" />
+        <None Remove="ui_elements\styles\TextBox\HideBottomLineTextBoxStyle.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="ui_elements\styles\Button\RoundButtonStyle.xaml" BuildAction="Page">
+            <Generator>MSBuild:Compile</Generator>
+        </Content>
+        <Content Include="ui_elements\styles\ListBoxItem\EmptyListBoxItemStyle.xaml" BuildAction="Page">
+            <Generator>MSBuild:Compile</Generator>
+        </Content>
+        <Content Include="ui_elements\styles\TextBox\HideBottomLineTextBoxStyle.xaml" BuildAction="Page">
+            <Generator>MSBuild:Compile</Generator>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\README.md">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="PresentationFramework" Version="[4.6.0,)" />
+    </ItemGroup>
+
+</Project>
