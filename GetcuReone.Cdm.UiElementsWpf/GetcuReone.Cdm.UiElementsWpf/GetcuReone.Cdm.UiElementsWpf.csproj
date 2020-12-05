@@ -18,9 +18,6 @@
         <Copyright>Copyright © 2020 $(Authors)</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
