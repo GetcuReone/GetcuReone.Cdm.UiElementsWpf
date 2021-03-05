@@ -12,7 +12,9 @@
         <RepositoryUrl>https://github.com/GetcuReone/GetcuReone.Cdm.UiElementsWpf</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>getcureone mvvm wpf mvvmwpf uielements elements</PackageTags>
-        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageReleaseNotes>Changes:
+        - fix assembly version
+        </PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/GetcuReone.Cdm.UiElementsWpf</PackageProjectUrl>
         <Copyright>Copyright © 2020 $(Authors)</Copyright>
@@ -25,8 +27,8 @@
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
         <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).0.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
