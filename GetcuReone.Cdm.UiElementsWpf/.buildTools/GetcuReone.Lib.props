@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+
+    <Import Project="$(MSBuildThisFileDirectory)\GetcuReone.Common.props"/>
+
+    <PropertyGroup>
+        <DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="$(MSBuildProjectName).xml">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
